@@ -17,9 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet var fourthTime: UILabel!
     @IBOutlet var fifthTime:  UILabel!
     @IBOutlet var sixthTime:  UILabel!
+    @IBOutlet var seventhTime:  UILabel!
+    @IBOutlet var eightTime:  UILabel!
+    @IBOutlet var fallAsleepSwitch: UISwitch!
     
-    var times = UILabel[]()
-    let sleepCycle = 5400
+    var timeLabels = UILabel[]()
+    let sleepCycle: Double = 5400
+    let timeToFallAsleep: Double = 15 * 60
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,33 +37,41 @@ class ViewController: UIViewController {
     
     //Returning to view
     override func viewWillAppear(animated: Bool) {
-        if times.count == 0 {
-            times.append(firstTime)
-            times.append(secondTime)
-            times.append(thirdTime)
-            times.append(fourthTime)
-            times.append(fifthTime)
-            times.append(sixthTime)
+        if timeLabels.count == 0 {
+            timeLabels.append(firstTime)
+            timeLabels.append(secondTime)
+            timeLabels.append(thirdTime)
+            timeLabels.append(fourthTime)
+            timeLabels.append(fifthTime)
+            timeLabels.append(sixthTime)
+            timeLabels.append(seventhTime)
+            timeLabels.append(eightTime)
         }
         
         setTimes()
     }
 
     func setTimes() {
-        let date = NSDate().dateByAddingTimeInterval(15 * 60).dateByAddingTimeInterval(5400)
-        for i in 0..6 {
-            var timeLabel = times[i]
-            var extraTime: NSTimeInterval = 5400 * Double(i + 1)
+        var date = NSDate()
+        if fallAsleepSwitch.on == true {
+            date = date.dateByAddingTimeInterval(timeToFallAsleep)
+        }
+        for (index, timeLabel) in enumerate(timeLabels) {
+            var extraTime: NSTimeInterval = sleepCycle * Double(index + 2)
             var newDate = date.dateByAddingTimeInterval(extraTime)
             timeLabel.text = formatTime(newDate)
         }
     }
-    
+
     func formatTime(date: NSDate) -> String {
         let formatter = NSDateFormatter()
-        formatter.dateFormat = "HH:MM"
+        formatter.dateFormat = "HH:mm"
 //        formatter.timeStyle = .ShortStyle
         return formatter.stringFromDate(date)
+    }
+
+    @IBAction func refreshButton(sender: UIButton) {
+        setTimes()
     }
 
 }
