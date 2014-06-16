@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:When To Wake Up.xcodeproj">
+      location = "self:Nap App.xcodeproj">
    </FileRef>
 </Workspace>

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EB890986194F5E870078D263"
-               BuildableName = "When To Wake Up.app"
-               BlueprintName = "When To Wake Up"
-               ReferencedContainer = "container:When To Wake Up.xcodeproj">
+               BuildableName = "Nap App.app"
+               BlueprintName = "Nap App"
+               ReferencedContainer = "container:Nap App.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EB890998194F5E870078D263"
-               BuildableName = "When To Wake UpTests.xctest"
-               BlueprintName = "When To Wake UpTests"
-               ReferencedContainer = "container:When To Wake Up.xcodeproj">
+               BuildableName = "Nap AppTests.xctest"
+               BlueprintName = "Nap AppTests"
+               ReferencedContainer = "container:Nap App.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EB890986194F5E870078D263"
-            BuildableName = "When To Wake Up.app"
-            BlueprintName = "When To Wake Up"
-            ReferencedContainer = "container:When To Wake Up.xcodeproj">
+            BuildableName = "Nap App.app"
+            BlueprintName = "Nap App"
+            ReferencedContainer = "container:Nap App.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EB890986194F5E870078D263"
-            BuildableName = "When To Wake Up.app"
-            BlueprintName = "When To Wake Up"
-            ReferencedContainer = "container:When To Wake Up.xcodeproj">
+            BuildableName = "Nap App.app"
+            BlueprintName = "Nap App"
+            ReferencedContainer = "container:Nap App.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EB890986194F5E870078D263"
-            BuildableName = "When To Wake Up.app"
-            BlueprintName = "When To Wake Up"
-            ReferencedContainer = "container:When To Wake Up.xcodeproj">
+            BuildableName = "Nap App.app"
+            BlueprintName = "Nap App"
+            ReferencedContainer = "container:Nap App.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

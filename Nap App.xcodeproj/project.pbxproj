@@ -25,13 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EB890987194F5E870078D263 /* When To Wake Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "When To Wake Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB890987194F5E870078D263 /* Nap App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nap App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB89098B194F5E870078D263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB89098C194F5E870078D263 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB89098E194F5E870078D263 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB890991194F5E870078D263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB890993194F5E870078D263 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		EB890999194F5E870078D263 /* When To Wake UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "When To Wake UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB890999194F5E870078D263 /* Nap AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nap AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB89099E194F5E870078D263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB89099F194F5E870078D263 /* When_To_Wake_UpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = When_To_Wake_UpTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,8 +57,8 @@
 		EB89097E194F5E870078D263 = {
 			isa = PBXGroup;
 			children = (
-				EB890989194F5E870078D263 /* When To Wake Up */,
-				EB89099C194F5E870078D263 /* When To Wake UpTests */,
+				EB890989194F5E870078D263 /* Nap App */,
+				EB89099C194F5E870078D263 /* Nap AppTests */,
 				EB890988194F5E870078D263 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,13 +66,13 @@
 		EB890988194F5E870078D263 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB890987194F5E870078D263 /* When To Wake Up.app */,
-				EB890999194F5E870078D263 /* When To Wake UpTests.xctest */,
+				EB890987194F5E870078D263 /* Nap App.app */,
+				EB890999194F5E870078D263 /* Nap AppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EB890989194F5E870078D263 /* When To Wake Up */ = {
+		EB890989194F5E870078D263 /* Nap App */ = {
 			isa = PBXGroup;
 			children = (
 				EB89098C194F5E870078D263 /* AppDelegate.swift */,
@@ -81,6 +81,7 @@
 				EB890993194F5E870078D263 /* Images.xcassets */,
 				EB89098A194F5E870078D263 /* Supporting Files */,
 			);
+			name = "Nap App";
 			path = "When To Wake Up";
 			sourceTree = "<group>";
 		};
@@ -92,12 +93,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EB89099C194F5E870078D263 /* When To Wake UpTests */ = {
+		EB89099C194F5E870078D263 /* Nap AppTests */ = {
 			isa = PBXGroup;
 			children = (
 				EB89099F194F5E870078D263 /* When_To_Wake_UpTests.swift */,
 				EB89099D194F5E870078D263 /* Supporting Files */,
 			);
+			name = "Nap AppTests";
 			path = "When To Wake UpTests";
 			sourceTree = "<group>";
 		};
@@ -112,9 +114,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB890986194F5E870078D263 /* When To Wake Up */ = {
+		EB890986194F5E870078D263 /* Nap App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB8909A3194F5E870078D263 /* Build configuration list for PBXNativeTarget "When To Wake Up" */;
+			buildConfigurationList = EB8909A3194F5E870078D263 /* Build configuration list for PBXNativeTarget "Nap App" */;
 			buildPhases = (
 				EB890983194F5E870078D263 /* Sources */,
 				EB890984194F5E870078D263 /* Frameworks */,
@@ -124,14 +126,14 @@
 			);
 			dependencies = (
 			);
-			name = "When To Wake Up";
+			name = "Nap App";
 			productName = "When To Wake Up";
-			productReference = EB890987194F5E870078D263 /* When To Wake Up.app */;
+			productReference = EB890987194F5E870078D263 /* Nap App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EB890998194F5E870078D263 /* When To Wake UpTests */ = {
+		EB890998194F5E870078D263 /* Nap AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB8909A6194F5E870078D263 /* Build configuration list for PBXNativeTarget "When To Wake UpTests" */;
+			buildConfigurationList = EB8909A6194F5E870078D263 /* Build configuration list for PBXNativeTarget "Nap AppTests" */;
 			buildPhases = (
 				EB890995194F5E870078D263 /* Sources */,
 				EB890996194F5E870078D263 /* Frameworks */,
@@ -142,9 +144,9 @@
 			dependencies = (
 				EB89099B194F5E870078D263 /* PBXTargetDependency */,
 			);
-			name = "When To Wake UpTests";
+			name = "Nap AppTests";
 			productName = "When To Wake UpTests";
-			productReference = EB890999194F5E870078D263 /* When To Wake UpTests.xctest */;
+			productReference = EB890999194F5E870078D263 /* Nap AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -165,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB890982194F5E870078D263 /* Build configuration list for PBXProject "When To Wake Up" */;
+			buildConfigurationList = EB890982194F5E870078D263 /* Build configuration list for PBXProject "Nap App" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -178,8 +180,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB890986194F5E870078D263 /* When To Wake Up */,
-				EB890998194F5E870078D263 /* When To Wake UpTests */,
+				EB890986194F5E870078D263 /* Nap App */,
+				EB890998194F5E870078D263 /* Nap AppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -226,7 +228,7 @@
 /* Begin PBXTargetDependency section */
 		EB89099B194F5E870078D263 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB890986194F5E870078D263 /* When To Wake Up */;
+			target = EB890986194F5E870078D263 /* Nap App */;
 			targetProxy = EB89099A194F5E870078D263 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -328,7 +330,7 @@
 				INFOPLIST_FILE = "When To Wake Up/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Nap App";
 			};
 			name = Debug;
 		};
@@ -340,7 +342,7 @@
 				INFOPLIST_FILE = "When To Wake Up/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Nap App";
 			};
 			name = Release;
 		};
@@ -359,7 +361,7 @@
 				INFOPLIST_FILE = "When To Wake UpTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Nap AppTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Debug;
@@ -375,7 +377,7 @@
 				INFOPLIST_FILE = "When To Wake UpTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Nap AppTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
 			name = Release;
@@ -383,7 +385,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB890982194F5E870078D263 /* Build configuration list for PBXProject "When To Wake Up" */ = {
+		EB890982194F5E870078D263 /* Build configuration list for PBXProject "Nap App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB8909A1194F5E870078D263 /* Debug */,
@@ -392,7 +394,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB8909A3194F5E870078D263 /* Build configuration list for PBXNativeTarget "When To Wake Up" */ = {
+		EB8909A3194F5E870078D263 /* Build configuration list for PBXNativeTarget "Nap App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB8909A4194F5E870078D263 /* Debug */,
@@ -400,7 +402,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		EB8909A6194F5E870078D263 /* Build configuration list for PBXNativeTarget "When To Wake UpTests" */ = {
+		EB8909A6194F5E870078D263 /* Build configuration list for PBXNativeTarget "Nap AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB8909A7194F5E870078D263 /* Debug */,
