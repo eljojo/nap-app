@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
     </dependencies>
     <scenes>
@@ -119,6 +118,7 @@
                         <outlet property="secondTime" destination="bPF-C6-3g9" id="TAz-W3-xjF"/>
                         <outlet property="seventhTime" destination="8v9-24-jxy" id="q8h-2S-fCn"/>
                         <outlet property="sixthTime" destination="0bB-Vu-oZu" id="ZXM-sO-WxF"/>
+                        <outlet property="storyboardView" destination="kh9-bI-dsS" id="frE-nL-hCH"/>
                         <outlet property="thirdTime" destination="oev-0C-GXp" id="HXw-dc-lBY"/>
                     </connections>
                 </viewController>

@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet var seventhTime:  UILabel!
     @IBOutlet var eightTime:  UILabel!
     @IBOutlet var fallAsleepSwitch: UISwitch!
+    @IBOutlet var storyboardView: UIView!
     
     var sleepLabels = UILabel[]()
     var napLabels   = UILabel[]()
@@ -36,6 +37,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+
+        var labelFrame = CGRectMake(10.0, 10.0, 200.0, 25.0)
+        var testLabel = UILabel()
+        testLabel.drawTextInRect(labelFrame)
+        testLabel.text = "hi world"
+        testLabel.textColor = orange
+        testLabel.font = UIFont.boldSystemFontOfSize(16)
+        self.view = testLabel
     }
 
     override func didReceiveMemoryWarning() {
