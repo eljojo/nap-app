@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     var timeLabels = UILabel[]()
     let sleepCycle: Double = 5400
-    let timeToFallAsleep: Double = 15 * 60
+    let timeToFallAsleep: Double = 14 * 60
 
 
     let gray        = UIColor(red: 102.0/255.0, green: 102.0/255.0, blue: 102.0/255.0, alpha: 1.0)
