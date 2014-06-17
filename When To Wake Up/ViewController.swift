@@ -9,8 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    
+
     @IBOutlet var firstTime:  UILabel!
     @IBOutlet var secondTime: UILabel!
     @IBOutlet var thirdTime:  UILabel!
@@ -24,7 +23,13 @@ class ViewController: UIViewController {
     var timeLabels = UILabel[]()
     let sleepCycle: Double = 5400
     let timeToFallAsleep: Double = 15 * 60
-    
+
+
+    let gray        = UIColor(red: 102.0/255.0, green: 102.0/255.0, blue: 102.0/255.0, alpha: 1.0)
+    let lightGreen  = UIColor(red: 153.0/255.0, green: 204.0/255.0, blue: 102.0/255.0, alpha: 1.0)
+    let darkGreen   = UIColor(red: 0.0/255.0,   green: 204.0/255.0, blue: 51.0/255.0,  alpha: 1.0)
+    var colours     = UIColor[]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -37,8 +42,14 @@ class ViewController: UIViewController {
     
     //Returning to view
     override func viewWillAppear(animated: Bool) {
+        // this code is pretty horrible
         if timeLabels.count == 0 {
             timeLabels = [firstTime, secondTime, thirdTime, fourthTime, fifthTime, sixthTime, seventhTime, eightTime]
+        }
+
+        // i have no freaking clue on how to do class variables in swift
+        if colours.count == 0 {
+            colours = [gray, gray, gray, lightGreen, darkGreen, darkGreen, darkGreen, darkGreen]
         }
         
         setTimes()
@@ -53,6 +64,7 @@ class ViewController: UIViewController {
             var extraTime: NSTimeInterval = sleepCycle * Double(index + 1)
             var newDate = date.dateByAddingTimeInterval(extraTime)
             timeLabel.text = formatTime(newDate)
+            timeLabel.textColor = colours[index]
         }
     }
 
