@@ -38,14 +38,7 @@ class ViewController: UIViewController {
     //Returning to view
     override func viewWillAppear(animated: Bool) {
         if timeLabels.count == 0 {
-            timeLabels.append(firstTime)
-            timeLabels.append(secondTime)
-            timeLabels.append(thirdTime)
-            timeLabels.append(fourthTime)
-            timeLabels.append(fifthTime)
-            timeLabels.append(sixthTime)
-            timeLabels.append(seventhTime)
-            timeLabels.append(eightTime)
+            timeLabels = [firstTime, secondTime, thirdTime, fourthTime, fifthTime, sixthTime, seventhTime, eightTime]
         }
         
         setTimes()
@@ -57,7 +50,7 @@ class ViewController: UIViewController {
             date = date.dateByAddingTimeInterval(timeToFallAsleep)
         }
         for (index, timeLabel) in enumerate(timeLabels) {
-            var extraTime: NSTimeInterval = sleepCycle * Double(index + 2)
+            var extraTime: NSTimeInterval = sleepCycle * Double(index + 1)
             var newDate = date.dateByAddingTimeInterval(extraTime)
             timeLabel.text = formatTime(newDate)
         }
